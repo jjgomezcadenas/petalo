@@ -1,0 +1,71 @@
+\pdfoutput=1 % only if pdf/png/jpg images are used
+\documentclass{JINST}
+
+\usepackage{amsmath,amssymb}
+\usepackage[numbers,sort]{natbib}
+%\hypersetup{colorlinks, citecolor=blue, linkcolor=blue, filecolor=blue, urlcolor=red}
+
+\title{A homeopathic remedy to pure Xenon's large diffusion }
+
+\author{EDC Freitas$^a$, CMB Monteiro$^a$, MR Jorge$^a$, 
+RDP Mano$^a$, CDR Azevedo$^b$, LMP Fernandes$^a$, 
+J. J. Gomez-Cadenas$^c$,\thanks{Corresponding author.}
+
+
+\llap{$^a$}Coimbra\\
+\llap{$^b$}Aveiro\\
+\llap{$^b$}Instituto de F\'isica Corpuscular (IFIC), CSIC \& Universitat de Val\`encia,\\ 
+Calle Catedr\'atico Jos\'e Beltr\'an, 2, 46980 Paterna, Valencia, Spain\\
+
+E-mail: \email{gomez@mail.cern.ch}}
+
+\bibliographystyle{unsrtnat}
+\input{commands}
+
+\abstract{The NEXT experiment is based in a High Pressure Xenon TPC (HPXe) using electroluminescence (EL) to amplify the ionisation signal. As amply demonstrated by the collaboration, the use of EL results in excellent energy resolution, which approaches 0.5 \% FWHM at \Qbb, a value not far from the intrinsic Fano's limit. However, the use of EL}
+
+\keywords{Neutrinoless double beta decay; TPC; high-pressure xenon chambers; Xenon; diffusion; energy resolution; gas mixtures.}
+
+
+\begin{document}
+
+\section{Introduction}
+\label{sec.intro}
+
+If neutrinos are Majorana particles, then neutrinoless double beta decay (\bbonu)  can be observed experimentally. The discovery of this process would be the unmistakable signal of physics beyond the Standard Model and would have far-reaching implications in particle physics and cosmology \cite{GomezCadenas:2013ue, Cadenas_2012}.. However,
+no compelling evidence for the existence of \bbonu\ decay has been obtained. The current generation of experiments, with fiducial masses in the range of 100 kg of isotope and a total background count in the region of interest around \Qbb\ (ROI) of a few tens of count per year, will barely explore the so-called degenerated hierarchy of neutrino masses ($m_1 \sim m_2 \sim m_3$). To explore the full inverse hierarchy of neutrino masses requires a sensitivity to the neutrino Majorana mass of 20 meV, which in turn implies building detectors with fiducial masses in the range of one ton of isotope and a total background count in the ROI of, at most, a few counts per ton-year of operation. This is a tremendous experimental challenge  \cite{Gomez-Cadenas:2015twa}).
+
+
+One of the most promising technologies currently being developed is that of high pressure xenon (HPXe) chambers. In particular, the NEXT collaboration \cite{Gomez-Cadenas:2014dxa} is building a HPXe time projection chamber (TPC) capable of holding 100 kg of xenon enriched at 90\% in the \bb\ decaying isotope \XE. NEXT operates at 15 bar and uses electroluminescent (EL) amplification of the ionization signal to optimize energy resolution. The detection of EL light provides an energy measurement using 60 photomultipliers (PMTs) located behind the cathode (the \emph{energy plane}) as well as tracking  via a dense array of about 8,000 silicon photomultipliers (SiPM) located behind the anode (the \emph{tracking plane}).
+
+The NEXT experiment has completed the R\&D phase which was carried out with the large-scale prototypes NEXT-DEMO and NEXT-DBDM. The prototypes have measured an energy resolution which extrapolates to 0.5--0.7 \% FWHM at \Qbb. NEXT-DEMO has also shown the robustness of the topological signal \cite{Alvarez:2012xda,Alvarez:2012kua,Alvarez:2013gxa,Lorca:2014sra}. Currently, the NEXT collaboration is commissioning the first phase of the experiment, called NEW at the Canfranc underground laboratory (LSC). 
+
+Detectors filled with pure xenon can achieve energy resolutions approaching ultimate intrinsic values  because the high excitation efficiency of xenon atoms by electron impact leads to high EL yields with very low fluctuations, which are negligible compared with the fluctuations in the number of primary electrons produced per event (measured by the Fano factor). The high excitation efficiency for xenon is related to the very low energy losses in elastic collisions and the absence of vibrational modes \cite{Freitas:2010zza}. 
+
+On the other hand, the predominance of elastic collisions in pure xenon results in slow drift velocities and high diffusion. While a drift velocity in the range of 1 ms/meter at 15 bar is not a specially hard problem for NEXT (given the long electron lifetimes, in excess of 20 ms measured by NEXT-DEMO and the low rates expected underground), the typical transverse diffusion, of the order of 1 cm/$\sqrt$m has the unwanted effect of blurring the reconstruction of the electron trajectories. The longitudinal diffusion, on the other hand, conspires with the intrinsic resolution introduced by the EL gap to also spoil the longitudinal resolution. Reducing the diffusion will certainly improve the effectiveness of the NEXT topological signature to separate signal from background. Furthermore, the possibility of enhancing the topological signature by means of an external magnetic field requires a transverse resolution in the range of 2-3 mm, while pure xenon yields resolutions in the range of 5-10 mm. 
+
+The standard recipe to reduce the diffusion in noble gases is to add a light molecular gas, such as \CHF\ or \COT. On the other hand, such gases are known to suppress the emission of EL light and to spoil the energy resolution. In fact, the very same physics that helps when adding a light molecule (e.g., reducing the elastic cross section that dominates the propagation of electrons in pure xenon and opening vibrational modes which deviate much less the electron trajectory from the drift field lines), hurts when it comes to the production of EL light (less xenon excitations) and energy resolution (more fluctuations due to inelastic interactions). Indeed, the pioneer St. Gotthard TPC \cite{Luscher:1998sd,Luscher:1998pq} managed to completely kill electroluminescence (and destroy their energy resolution along the way) by adding 4\% of \CHF\ to their xenon. It appears, therefore, that the problem is unsolvable. Adding light molecular gases (LMG) to reduce diffusion and improve drift velocity will reduce the EL yield and deteriorate energy resolution. 
+
+In this paper we demonstrate that the solution to this dilemma is simply the addition of homeopathic amounts of \CHF\ or \COT. There may be other LMG which can also work well, but the two we have selected are common and easy to work with. In particular, \COT\ is not flammable, and trapping some of it inside underground experiments has the added merit of contributing to reduce the World \COT\ budget and thus mitigating the global climate change problem\footnote{A small contribution, to be sure, but most of the proposed schemes for \COT\ trapping do not bring, in practice, much better results.}.
+ 
+\section{Diffusion and drift velocity in xenon mixtures}
+\label{sec.intro}
+
+In this section we present the result of MAGBOLTZ (Magboltz 10.9) calculations yielding diffusion an drift velocities for several xenon mixtures and under various experimental conditions relevant for NEXT. Specifically the pressure of the gas mixtures is 15 bar unless specified otherwise, the diffusion is calculated after 1 m drift (corresponding to the maximum drift length in NEXT), and the electric field is 300 V/cm. The following LMG have been considered in the simulations: DME, \CHF, Ethane, Isobuthane,\COT, Nitrogen, Hydrogen, CF$_4$~ and TMA. The gas concentrations in xenon have been varied from 0.001 \% to 10\%. 
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.48]{fig/bfield_motion.pdf}
+	\caption{\label{fig_bfieldmotion}Motion of an electron in a magnetic field.  The electron exhibits helical motion around the field line as shown (entering the page at the $\times$ and exiting the page at the $\bullet$) regardless of the direction of the component of the electron's velocity along the direction of $\mathbf{B}$.}
+\end{figure}
+
+
+\acknowledgments
+
+This work was supported by the European Research Council under the Advanced Grant 339787-NEXT and the Ministerio de Econom\'{i}a y Competitividad of Spain under Grants CONSOLIDER-Ingenio 2010 CSD2008-0037 (CUP), FPA2009-13697-C04-04, FPA2009-13697-C04-01, FIS2012-37947-C04-01, FIS2012-37947-C04-02, FIS2012-37947-C04-03, and FIS2012-37947-C04-04.
+
+\bibliography{biblio}
+
+
+
+\end{document}
