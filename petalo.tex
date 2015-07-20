@@ -32,8 +32,6 @@ E-mail: \email{gomez@mail.cern.ch}}
 %\section{Positron Electron Tomography}
 \label{sec.intro}
 
-\paragraph{Positron electron tomography:}
-
 A PET (Positron-Electron Tomography) is a functional scan ---it does not show anatomic features--- whose main application is tumor diagnosis. It is based in the used of positron emitters radio-pharmaceuticals such as the fluorodeoxyglucose (FDG). Such radiotracers 
 are injected into the patient prior to the scan. The emitted positrons slow down in the surrounding patient’s tissue, annihilating with atomic electrons to give two back-to-back 511 keV annihilation photons. The annihilation occurs within a few millimetres from the positron source. By detecting the two photons in coincidence and the coordinates of their interaction points in a detector, it is possible to define a line of response (LOR) along which the positron emitting source is located in the patient. A set of such intersecting lines allows 3D reconstruction of the source. 
 
@@ -83,26 +81,26 @@ Workshop on Technique and Application of Xenon Detectors (Xenon 01), University 
 Subsequent R\&D is documented in \footnote{{\em Chepel, V. Y. et al.}, 1995, Nucl. Instrum. Methods A
 367, 58; {\em Chepel, V. Y. et al.}, 1994, Nucl. Instrum. Methods
 A349, 500; {\em Chepel, V. Y. et al.}, 1997, Nucl. Instrum. Methods A392, 427; {\em Chepel, V. Y. et al., 1999, IEEE Trans NS-46, 1038}; {\em Crespo, P. et al.}, 1998, IEEE Trans. NS-45, 56; {\em Crespo, P. et al.}, 2000, IEEE Trans, NS-47, 2119; {\em Lopes, M. I. et al.}, 1995, IEEE Trans. NS-42, 2298.; {\em Thers D.}, ``A Positron Emission Tomograph (PET)
-based on a liquid Xenon Time Projection Chamber and Microstructure Devices for Compton tracking'', in Workshop on LXe-PET Camera, Subatech, Nantes, France, October 2003; }. All those devices were based in the exploration of the ionisation signal in LXe. However, the measurement of such signals introduces a severe constrain to the technique, given the slow drift time of electrons in LXe (typically of the order of 2 mm/$\mu$s, for a drifting field of 
+based on a liquid Xenon Time Projection Chamber and Microstructure Devices for Compton tracking'', in Workshop on LXe-PET Camera, Subatech, Nantes, France, October 2003; }. {\bf All those devices were based in the exploration of the ionisation signal in LXe}. {\em However, the measurement of such signals introduces a severe constrain to the technique, given the slow drift time of electrons in LXe} (typically of the order of 2 mm/$\mu$s, for a drifting field of 
 1 KV/cm). Since $\lambda = 3$.6~cm the practical length of a LXe cell (along the photon line of flight) must be of 5 cm to contain 80 \% of the photons. This, in turn, implies drifting times of 25 $\mu$s, which limits the interaction rate that can be recorded by the cell to  
 $\sim10^5 s^{-1}$, and therefore imposes a low-rate PET with a limited range of applications. 
 
 On the other hand, the possibility of building a LXe PET (with TOF capabilities) based on the excellent properties of LXe as scintillator, was first suggested by Lavoie in 1976\footnote{{\em Lavoie L.}, 1976, Medical Physics 3, No. 5, 283.}, and the study of this type of PET was carried out by the Waseda group \footnote{{\em Doke T., J. Kikuchi, and F. Nishikido}, 2006, 
 Nucl. Instrum. Methods A 569, 863;  {\em Nishikido, F. et al.}, 2005, Jpn J. Appl. Phys. 44, 5193; {\em Nishikido, F. et al.}, 2004, Jpn J. Appl. Phys. 43, 779.}. The Waseda prototype was based in LXe cells read out by VUV-sensitive PMTs. In those cells one of the sides was left instrumented. The relatively poor performance of the system can be attributed in part to the use of PMTs and in part to the partial lack of instrumentation which affected both the energy and the time resolution. The PMTs, although sensitive to the VUV light emitted by xenon had low quantum efficiencies (in the range 5-25 \%), and their rather large size compared with the size of the cell ($18\times 18$~mm$^2$) introduced significant geometrical effects which were difficult to correct. As a result of the above effects combined the energy resolution was of the same order than that of conventional SSDs. The space resolution was rather good, in the range of 2-3 mm, but only in the central volume of the cell (a cube of 5 mm size), and deteriorated rapidly in the borders, due to the space corrections introduced by the (relatively) large PMTs. The time resolution in the central volume was excellent, of the order of 260 ps, showing the enormous potential of the technology for PET application. 
 
-In this paper we propose a (Positron Electron TOF Apparatus based on Liquid xenOn), PETALO, which, like the Waseda apparatus, uses the intense LXe scintillation light as the unique source of signal. However, the availability of a completely new class of light sensors (the so called silicon photomultipliers, or SiPM) make it possible to design a detection cell which does not suffer of the problems found in the Waseda prototype, most of them related with the large bulk of the photomultipliers with respect to the cell size, as well as to their (relatively) poor gain. 
+In this paper we propose a (Positron Electron TOF Apparatus based on Liquid xenOn), PETALO, which, like the Waseda apparatus, uses the intense LXe scintillation light as the unique source of signal. {\em However, PETALO is based in a detection cell which captures with high efficiency most of the light produced in it and does not suffer from border effects}, a condition sine qua non to achieve good energy and space resolution. The construction of such a cell is facilitated by the availability of a completely new class of light sensors, the so called silicon photomultipliers, or SiPM.. 
 
 This paper is organised as follows. In section \ref{sec.pet} we describe with some detail the PETALO concept. In section \ref{sec.mc} we show the results of our Monte Carlo simulations, which show the excellent potential of the technology. In section \ref{sec.tof} we discuss the potential of PETALO as TOF device. In section \ref{sec.comp} we note the capability of the device to handle Compton interactions. In \ref{sec.conclu} we conclude. 
 
 \section{The PETALO concept}
 \label{sec.petalo}
 
-PETALO (Positron Electron TOF Apparatus base on Liquid xenOn) is a new concept for a TOF-capable, high sensitivity, PET apparatus based in the excellent scintillating properties of LXe and the availability of modern SiPM technology which 
-solves the limitations found in the pioneer Waseda prototype. The two primary novelties are:
-\begin{enumerate}
-\item The use of a fully reflecting cell. This is achieved by covering the internal side of the cell with reflective panels, made of high density teflon coated with TPB. The emitted VUV light is shifted to 420 nm as soon as it hits the teflon panels, which on the other hand, reflect blue light in the range of 420 nm with 98-99\% efficiency. Furthermore, TPB does not absorb blue light above 400 nm, therefore minimising loses. 
-\item The use of large area SiPMs as readout devices. Currently, several manufacturers offer SiPMs of large area, high gain, low dark current and very low noise which can operate at liquid xenon temperatures with excellent performance.  
-\end{enumerate} 
+PETALO (Positron Electron TOF Apparatus base on Liquid xenOn) is a new concept for a TOF-capable, high sensitivity, PET apparatus based in the excellent scintillating properties of LXe and the concept of a new type of detection cell, which captures with high efficiency, minimal border effects and uniform response, most of the light produced.
+ 
+\begin{itemize} 
+\item {\bf High efficiency} is achieved by covering the internal side of the cell with reflective panels, made of high density teflon coated with TPB. The emitted ultraviolet light (172 nm) is shifted to 420 nm as soon as it hits the teflon panels, which on the other hand, reflect blue light in the range of 420 nm with 98-99\% efficiency. Furthermore, TPB does not absorb blue light above 400 nm, therefore minimising loses. 
+\item {\bf Minimal border effects and uniform response}. This is achieved by choosing large area SiPMs as readout devices. Currently, several manufacturers offer SiPMs of large area, high gain, low dark current and very low noise which can operate at liquid xenon temperatures with excellent performance.  
+\end{itemize} 
 
 \subsection{SiPMs}
 
@@ -149,7 +147,7 @@ Indeed the DBs for PETALO are easier to fabricate and much more economical than 
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[scale=0.5]{img/lxsc.png}
+	\includegraphics[scale=0.5]{img/lxsc2.png}
 	%\includegraphics[scale=0.35]{img/box5open.jpg}
 	\caption{\label{fig.box} The LXSC6 is a box of 
 	$5\times 5 \times 5$~cm$^3$~with all its faces instrumented with SiPMs. In order to reduce costs, however, is feasible to instrument only two faces (LXSC2). The faces non instrumented are covered by reflecting teflon coated with TPB. }
@@ -157,8 +155,7 @@ Indeed the DBs for PETALO are easier to fabricate and much more economical than 
 
 Figure \ref{fig.box}~shows a conceptual drawing of the keystone of the PETALO apparatus, the Liquid Xenon Scintillating Cell (LXSC). The cell is a box of $5\times 5 \times 5$~cm$^3$~ filled with liquid xenon and immersed in a cryostat. The cell transverse size (relative to the incoming beam) is optimised to minimise pileup and its longitudinal size is optimised so that most of the incoming 511 keV photons (80\%) interact in the volume. 
 
-The best performance from the point of view of energy resolution is obtained when all the box faces are instrumented with SiPMs, as illustrated in the left panel of Figure \ref{fig.box}. We denote this configuration as LXSC6. On the other hand, the most economical configuration is obtained instrumenting only the entry and exit faces (relative to the beam direction). We call this configuration LXSC2. 
-%Other possible configurations instrument three faces (entry, exit and one of the lateral faces, LXSC3) or four faces (entry, exit and two opposite laterals, LXSC4). 
+The best performance from the point of view of energy resolution is obtained when all the box faces are instrumented with SiPMs, as illustrated in the left panel of Figure \ref{fig.box}. We denote this configuration as LXSC6. On the other hand, the most economical configuration is obtained instrumenting only the entry and exit faces (relative to the beam direction). We call this configuration LXSC2. Other possible configurations instrument three faces (entry, exit and one of the lateral faces, LXSC3) or four faces (entry, exit and two opposite laterals, LXSC4). 
 The faces non instrumented are covered by reflecting teflon coated with TPB. In section \ref{sec.mc} we show that an excellent performance can be obtained even with the sparse LXSC2 configuration. 
 
 \section{Monte Carlo simulations of the LXSC}
@@ -176,7 +173,7 @@ The faces non instrumented are covered by reflecting teflon coated with TPB. In 
 	\caption{\label{fig.events}  Left panel: a photoelectric event in the LXSC, showing a single deposition cluster; right panel: A two-site Compton event.  }
 \end{figure}
 
-A full GEANT4 simulation has been carried out to study the performance of the various configurations of the LXSC. Photons of 511 keV enter the LXSC from outside (defining the ``entry face'') and interact in the cell (see Figure \ref{fig.gammas}), through photoelectric (around 20\% of the times, see Figure \ref{fig-events}, left panel) or Compton interactions (Figure \ref{fig-events}, right panel. About 60\% of the incoming gammas deposit their full energy in the LXSC. 
+A full GEANT4 simulation has been carried out to study the performance of the LXSC. Photons of 511 keV enter the LXSC from outside (defining the ``entry face'') and interact in the cell (see Figure \ref{fig.gammas}), through photoelectric (around 20\% of the times, see Figure \ref{fig.events}, left panel) or Compton interactions (Figure \ref{fig.events}, right panel. About 60\% of the incoming gammas deposit their full energy in the LXSC. 
 
 If $E$~ is the energy deposited by the ionising radiation (in this case 511 keV), the maximum scintillation yield of LXe is given as $E/W_{ph}$, where $W_{ph}$~ is the average energy required for the production of a single photon. The most probable value of $W_{ph}$~ in LXe  is\footnote{E. Aprile and T. Doke, Liquid Xenon Detectors for Particle Physics and Astrophysics, Rev. Mod. Phys. 82 (2010) 2053–2097, [arXiv:0910.4956].} is $13.8 \pm 0.9$~eV. Therefore, a maximum of 37,000 scintillation photons are produced when a 511 keV gamma interacts in the LXe. On the other hand, measurements carried out with electrons of 1 MeV result in a lower value of $W_{ph}^e = 21.6$\footnote{T. Doke, A. Hitachi, J. Kikuchi, K. Masuda, H. Okada and E. Shibamura: Jpn. J. Appl. Phys. 41 (2002) 1538.}. This lowest value is attributed to ionisation electrons that do not recombine, and would imply a yield of $\sim$ 24,000 scintillation photons for a 511 keV gammas. The results presented below are obtained assuming the maximum scintillation yield, but we also discuss the implications of a lowest scintillation yield in the energy and spacial resolution. 
 
@@ -204,6 +201,8 @@ The need for geometrical corrections is illustrated in Figure \ref{fig.energyDep
 
 If we assume the lowest $W_{ph}$~measured for electrons, the yield would be reduced by 65\% and the resolution of the LXSC2 would be around 3.5\% FWHM, much better than that of modern SSDs such as LSO. 
 
+Notice that the small geometrical corrections found in the LXSC (even in the case of the LXSC2) are a crucial difference with the Waseda cell, where the geometrical corrections, due to the large size of the PMTs where very large and made, ultimately, the cell impractical as a detection device, since only the central part of the detector ($5 \times 5 \times 5$~mm$^3$) was useful. The second crucial difference that the LXSC registers much more light than the Waseda cell. This is due to the fact that all the faces are reflecting (the Waseda cell left one face open, resulting in large losses and fluctuations) and to the use of SiPMs, which have very large PDE ($\sim$ 50\% to be compared with the 5-20\% of the Waseda PMTs) right in the region (420 nm) where the light is shifted from TPB. 
+
 
 %\begin{figure}[!htb]
 %	\centering
@@ -216,7 +215,7 @@ If we assume the lowest $W_{ph}$~measured for electrons, the yield would be redu
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.4]{img/zEvents.png}
-	\caption{\label{fig.ze}  Left panel: a photoelectric event interacting at $\sim$~2 cm from the entry face, leaving a distinct ``site signature'' (a cluster of SiPMs with charge higher than the rest. Center panel: the ``site signature'' (in the entry face) is less sharp when the gamma interacts in the center of the cell. Right panel: the site signature (in the entry face) has all but disappeared when the gamma interacts near the entry face.}
+	\caption{\label{fig.ze}  Left panel: a photoelectric event interacting at $\sim$~2 cm from the entry face, leaving a distinct ``site signature'' (a cluster of SiPMs with charge higher than the rest. Right panel: the site signature (in the entry face) has all but disappeared when the gamma interacts near the exit face.}
 \end{figure}
 
 \begin{figure}[!htb]
@@ -235,9 +234,9 @@ The simplest way to determine the point of interaction of an incoming photon, $(
 \[
 \xi_r = \frac{\sum \xi_i N_i}{N}
 \]
-where $\xi_r$~stands for each one of the three coordinates ($x_r, y_r, z_r$), $N_i$~is the number of photoelectrons registered in each SiPM and $N=\sum N_i$. In the LXSC6 and LXSC4 configurations one can compute redundant measurements of $\xi_r$~for each coordinate. In the LXSC2 one can obtain ($x_r,y_r$) redundantly from the information found in the entry and exit faces and $z_r$~from the ratio of energy measured in the entry and the exit faces. This is illustrated by Figure \ref{fig.ze}, where the map of SiPMs in the entry face  is shown for gammas which interact: a) near the entry face; b) in the middle of the chamber; c) near the exit face. Clearly a baricenter algorithm using the information of the SiPMs in the entry face works well for gammas interacting in the first few cm of the cell (along the longitudinal coordinate), and fails completely when the gammas are in the last two centimetres of the cell. However, when that happens, one can compute the baricenter using the exit face. 
+where $\xi_r$~stands for each one of the three coordinates ($x_r, y_r, z_r$), $N_i$~is the number of photoelectrons registered in each SiPM and $N=\sum N_i$. In the LXSC6 and LXSC4 configurations one can compute redundant measurements of $\xi_r$~for each coordinate. In the LXSC2 one can obtain ($x_r,y_r$) redundantly from the information found in the entry and exit faces and $z_r$~from the ratio of energy measured in the entry and the exit faces. This is illustrated by Figure \ref{fig.ze}, where the map of SiPMs in the entry face  is shown for gammas which interact: a) near the entry face; b) near the exit face. Clearly a baricenter algorithm using the information of the SiPMs in the entry face works well for gammas interacting in the first few cm of the cell (along the longitudinal coordinate), and may when the gammas are in the last two centimetres of the cell. However, when that happens, one can compute the baricenter using the exit face.  
 
-This is illustrated quantitatively in Figure \ref{fig.sipmm}, which shows the number of photoelectrons in the SiPM registering the maximum signal (max signal sensor or MSS) as a function of the distance to the entry face (left panel) and the number of photoelectrons in the SiPMs registering the maximum signal as a function of the distance to the entry face (right panel). The signal of the MSS stays above 100 pes for the first (and the last) 1.5 cm of the cell, and above 50 for the first (and the last) 2 cm of the box. In the central volume of about 1 cm, the position is determined by the combination of the signal found in both faces. 
+This is illustrated quantitatively in Figure \ref{fig.sipmm}, which shows the number of photoelectrons in the SiPM registering the maximum signal (max signal sensor or MSS) as a function of the distance to the entry face (left panel) and the number of photoelectrons in the SiPMs registering the maximum signal as a function of the distance to the entry face (right panel). The signal of the MSS stays above 100 pes for the first (and the last) 2 cm of the cell, . In the central volume of about 1 cm, the position is determined by the combination of the signal found in both faces. 
 
 Figure \ref{fig.zratio} shows the ratio of of the signal in the entry and the exit face (the signal in a face is defined as the sum of the signals of all its SiPMs) as a function of the longitudinal coordinate. The ratio measures the longitudinal coordinate.  
 
@@ -270,6 +269,7 @@ Instead, in the LXSC, multiple-site hits are easily identified (the system measu
 \label{sec.conclu}
 
 To summarise, PETALO offers the following advantages:
+
 \begin{enumerate}
 \item Light yield higher than any conventional SSD.
 \item Excellent intrinsic energy resolution (2.5 -- 3.5 \% FWHM depending on configuration of LXSC and of light yield). 
@@ -279,6 +279,8 @@ To summarise, PETALO offers the following advantages:
 \item Fully NMR compatible. 
 \item Competitive cost. The LXSC2 version of PETALO would cost today roughly half of the cost of the equivalent LSO unit. With the cost of SiPMs falling, the  cost of PET scanners will soon be fully dominated by the material of choice. Xenon is much cheaper than LSO and thus a large-scale apparatus (full body PET) is conceivable. 
 \end{enumerate}
+
+With respect to the pioneer work of the Waseda group, PETALO introduces the concept of the fully reflective LXSC, capable to detect the VUV light emitted by xenon with high efficiency and very small geometrical effects. The implementation of the LXSC using modern SIPMs may result in a break-through in PET technology. 
 
 
 \acknowledgments
